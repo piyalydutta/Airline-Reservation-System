@@ -1,4 +1,4 @@
-import java.text.ParseException;
+ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -11,9 +11,9 @@ public class Main {
         // Predefined flights
         try {
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-            flights.add(new Flight("FL1001", "New York", "London", sdf.parse("2024-08-10 09:30")));
-            flights.add(new Flight("FL2002", "Paris", "Tokyo", sdf.parse("2024-08-12 14:00")));
-            flights.add(new Flight("FL3003", "Sydney", "Dubai", sdf.parse("2024-08-15 22:00")));
+            flights.add(new Flight("FL1001", "New York", "London", sdf.parse("2025-08-10 09:30")));
+            flights.add(new Flight("FL2002", "Paris", "Tokyo", sdf.parse("2025-08-12 14:00")));
+            flights.add(new Flight("FL3003", "Sydney", "Dubai", sdf.parse("2025-08-15 22:00")));
         } catch (ParseException e) {
             System.out.println("Error loading flights.");
         }
